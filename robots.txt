@@ -1,0 +1,5 @@
+# Enquanto o site for rascunho, nao indexar. Ao publicar, troque por:
+# User-agent: *
+# Allow: /
+User-agent: *
+Disallow: /

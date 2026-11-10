@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://garciaenegriniadvogados.com.br/sitemap.xml

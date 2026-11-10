@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade · Garcia &amp; Negrini</title>
+<link rel="canonical" href="https://garciaenegriniadvogados.com.br/privacidade.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>
+  /* Cores a partir da logomarca vista no Instagram: fundo preto e dourado. Ajustar ao tom exato quando houver o arquivo da logo. */
+  :root{
+    --navy:#111111; --navy2:#262219; --gold:#b8913a; --ink:#1e1e1e; --mut:#5f5b54;
+    --line:#e4e8ec; --soft:#f5f7f9; --bg:#ffffff; --warn:#fff4d6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+  .wrap{max-width:1080px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+  h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;color:var(--navy);line-height:1.15;margin:0;text-wrap:balance;font-weight:400}
+  h2{font-size:clamp(1.9rem,4vw,2.6rem)}
+  .eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 10px}
+  a{color:inherit}
+
+  .draft{background:var(--warn);border-bottom:1px solid #ecd9a0;font-size:.85rem;padding:8px 0;text-align:center;color:#5a4a14}
+
+  header.top{position:sticky;top:0;z-index:20;background:rgba(17,17,17,.97);backdrop-filter:blur(6px);border-bottom:1px solid #2b2619}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px;flex-wrap:wrap}
+  .logo{display:grid;grid-template-columns:auto 1fr;column-gap:12px;align-items:center;font-family:"Cormorant Garamond",Georgia,serif;font-weight:700;font-size:1.35rem;color:#e6cf97;text-decoration:none;line-height:1.1}
+  .logo img{grid-row:1/3;height:46px;width:auto;display:block}
+  .logo small{display:block;font-family:Inter,sans-serif;font-weight:500;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:3px}
+  nav{display:flex;gap:22px;flex-wrap:wrap;font-size:.92rem}
+  nav a{text-decoration:none;color:#c8bfa9} nav a:hover{color:#fff}
+
+  .hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:clamp(56px,10vw,110px) 0}
+  .hero h1{color:#fff;font-size:clamp(2.3rem,6vw,4rem);max-width:15ch}
+  .hero-g{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(24px,5vw,64px);align-items:center}
+  .hero-logo{width:100%;max-width:340px;justify-self:center;display:block;filter:drop-shadow(0 8px 30px rgba(0,0,0,.45))}
+  .hero p{max-width:56ch;font-size:1.08rem;color:#d6e0ea;margin:20px 0 30px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 22px;border-radius:6px;font-weight:600;font-size:.95rem;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:inherit}
+  .btn.gold{background:var(--gold);color:#fff} .btn.gold:hover{filter:brightness(1.08)}
+  .btn.ghost{border-color:rgba(255,255,255,.5);color:#fff} .btn.ghost:hover{background:rgba(255,255,255,.1)}
+
+  section{padding:clamp(48px,8vw,84px) 0}
+  section.alt{background:var(--soft)}
+  .lead{max-width:62ch;color:var(--mut);margin:14px 0 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:34px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:24px;min-width:0}
+  .card h3{font-size:1.45rem;margin-bottom:8px}
+  .card p{margin:0;color:var(--mut);font-size:.95rem}
+  .tag{display:inline-block;margin-top:12px;font-size:.72rem;color:var(--gold);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+
+  .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:34px}
+  .person{border-top:3px solid var(--gold);padding-top:14px}
+  .person .ph{aspect-ratio:4/5;max-width:100%;background:var(--soft);border:1px dashed #c4ccd4;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#95a0ab;font-size:.8rem;margin-bottom:12px;text-align:center;padding:10px}
+  .person h3{font-size:1.35rem} .person p{margin:2px 0 0;color:var(--mut);font-size:.9rem}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px);align-items:start}
+  ul.ticks{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+  ul.ticks li{padding-left:26px;position:relative;color:var(--ink)}
+  ul.ticks li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:2px;background:var(--gold)}
+
+  form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:clamp(20px,4vw,32px);display:grid;gap:14px;min-width:0}
+  label{font-size:.85rem;font-weight:600;color:var(--navy);display:grid;gap:6px}
+  input,select,textarea{font:inherit;padding:11px 12px;border:1px solid #cfd6dd;border-radius:6px;background:#fff;color:var(--ink);width:100%}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+  textarea{min-height:110px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .consent{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.82rem;color:var(--mut)}
+  .consent input{width:auto;margin-top:4px}
+  .note{font-size:.78rem;color:var(--mut);margin:0}
+  #ok{display:none;background:#eaf6ef;border:1px solid #b7dcc6;color:#1f5a3d;padding:12px 14px;border-radius:6px;font-size:.9rem}
+
+  footer{background:var(--navy);color:#c9d4df;padding:40px 0 28px;font-size:.88rem}
+  footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+  footer h3{color:#fff;font-size:1.2rem;margin-bottom:8px}
+  footer p{margin:0 0 4px}
+  .fine{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:16px;font-size:.78rem;color:#9fb0c1}
+  .ph-txt{background:#fff4d6;color:#5a4a14;padding:0 4px;border-radius:3px}
+  footer .ph-txt{background:rgba(255,244,214,.18);color:#f3dfa0}
+
+  @media (max-width:760px){.two,.row,.hero-g{grid-template-columns:1fr} nav{gap:14px} .hero-logo{max-width:230px;order:-1}}
+
+  .doc{max-width:760px;margin:0 auto;padding-block:48px}.doc h1{font-size:2.2rem;margin-bottom:6px}.doc h2{font-size:1.4rem;margin:30px 0 8px}.doc p,.doc li{color:#2b2b2b}.doc ul{padding-left:20px}
+</style>
+</head>
+<body>
+<div class="draft"><div class="wrap"><b>Rascunho para revisão jurídica.</b> Texto-base conforme a LGPD; o escritório deve revisar antes de publicar. Itens em <span class="ph-txt">[colchetes]</span> precisam ser preenchidos.</div></div>
+<header class="top"><div class="wrap bar"><a class="logo" href="index.html"><img src="assets/simbolo.png" alt="">Garcia &amp; Negrini<small>Advogados Associados</small></a><nav><a href="index.html">Voltar ao site</a></nav></div></header>
+<main class="wrap doc">
+<h1>Política de Privacidade</h1>
+<p class="note">Última atualização: <span class="ph-txt">[data]</span></p>
+<h2>1. Quem somos</h2>
+<p>Garcia &amp; Negrini Advogados Associados, CNPJ 57.595.921/0001-61, com sede em Mauá - SP, Av. Barão de Mauá, 833 - Vila Bocaina, CEP 09310-000 (&ldquo;escritório&rdquo;), é a controladora dos dados pessoais tratados por este site. Contato do responsável pelo tratamento de dados: Dr. Ricardo dos Santos Negrini, OAB/SP 455.904, contato@garciaenegriniadvogados.com.br.</p>
+<h2>2. Quais dados coletamos</h2>
+<ul><li>Nome, empresa (se houver), telefone/WhatsApp e e-mail, quando você preenche o formulário de contato.</li><li>O conteúdo da mensagem que você escolhe enviar.</li></ul>
+<p>Este site não usa cookies, não usa ferramentas de análise ou rastreamento e não carrega fontes ou scripts de terceiros. Não peça nem envie documentos ou dados sensíveis por este formulário.</p>
+<h2>3. Para que usamos</h2>
+<p>Para responder ao seu contato, agendar atendimento e, se você se tornar cliente, iniciar o relacionamento profissional. Não usamos os dados para publicidade de terceiros.</p>
+<h2>4. Base legal</h2>
+<p>Consentimento (art. 7º, I, da LGPD) e, quando você solicita contato ou serviço, procedimentos preliminares relacionados a contrato (art. 7º, V). Os dados dos clientes são tratados também para execução de contrato e exercício regular de direitos.</p>
+<h2>5. Compartilhamento</h2>
+<p>Ao continuar pelo WhatsApp, sua mensagem é tratada pelo WhatsApp, conforme a política da própria plataforma. Usamos fornecedores de tecnologia para armazenar e organizar o atendimento, sob dever de confidencialidade <span class="ph-txt">[listar após revisão: ex.: hospedagem e banco de dados]</span>. Não vendemos dados pessoais.</p>
+<h2>6. Sigilo profissional</h2>
+<p>As informações de clientes estão protegidas pelo sigilo profissional da advocacia. Respostas sobre processos só são enviadas após conferência de um advogado.</p>
+<h2>7. Por quanto tempo guardamos</h2>
+<p>Pelo tempo necessário para a finalidade do contato e para cumprir obrigações legais e profissionais <span class="ph-txt">[definir prazos]</span>.</p>
+<h2>8. Seus direitos</h2>
+<p>Você pode pedir confirmação do tratamento, acesso, correção, anonimização, portabilidade, eliminação, informação sobre compartilhamento e revogação do consentimento, nos termos do art. 18 da LGPD, pelo contato acima.</p>
+<h2>9. Segurança</h2>
+<p>Adotamos medidas técnicas e organizacionais para proteger os dados, como controle de acesso por perfil, confirmação de advogado para informações enviadas a clientes e conexões seguras.</p>
+<h2>10. Alterações</h2>
+<p>Esta política pode ser atualizada. A versão vigente fica sempre nesta página.</p>
+</main>
+<footer><div class="wrap"><p class="fine" style="border:0;margin:0;padding:0">As informações deste site têm caráter informativo e não constituem aconselhamento jurídico. © Garcia &amp; Negrini Advogados Associados.</p></div></footer>
+</body></html>
